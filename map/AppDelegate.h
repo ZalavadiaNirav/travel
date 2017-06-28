@@ -7,10 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKDatabase.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import <GooglePlaces/GooglePlaces.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,SKDatabaseDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic,retain) SKDatabase *objsk;
+@property (nonatomic,retain) NSMutableArray *coordinateArr;
+@property (nonatomic,retain) NSMutableArray *polyline;
 
 
 @end

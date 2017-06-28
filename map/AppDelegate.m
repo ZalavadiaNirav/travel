@@ -14,9 +14,19 @@
 
 @implementation AppDelegate
 
+@synthesize coordinateArr;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [GMSServices provideAPIKey:@"AIzaSyABTeyQTTX8TgQr22sZ5ZI0TyDdLgK5_hQ"];
+    [GMSPlacesClient provideAPIKey:@"AIzaSyDHoU3-mZYIh2_yXYoPi4PmGUDgXetdmow"];
+    self.objsk=[[SKDatabase alloc] initWithFile:@"pathDb.sqlite"];
+    self.polyline=[[NSMutableArray alloc] init];
+    self.objsk.delegate=self;
+    
+    
+    
     return YES;
 }
 

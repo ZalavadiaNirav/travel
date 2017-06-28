@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface createTripVC : UIViewController
+@interface createTripVC : UIViewController <SKDatabaseDelegate>
+{
+    AppDelegate *objapp;
+    NSMutableArray *routesArr;
+    NSMutableString *distanceStr,*durationStr;
+}
 
+-(void)saveIntoDb;
 
 @end
 

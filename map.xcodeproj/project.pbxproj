@@ -7,25 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94AD7EA30E929AB9660A702D /* libPods-map.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72CA1BEDA8F4F941402FA342 /* libPods-map.a */; };
+		F10FB4111F0372BC0053B846 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F10FB4101F0372BC0053B846 /* MapVC.m */; };
 		F1128EE81F00DA0000F020FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1128EE71F00DA0000F020FE /* main.m */; };
 		F1128EEB1F00DA0000F020FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1128EEA1F00DA0000F020FE /* AppDelegate.m */; };
-		F1128EEE1F00DA0000F020FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1128EED1F00DA0000F020FE /* ViewController.m */; };
+		F1128EEE1F00DA0000F020FE /* createTripVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1128EED1F00DA0000F020FE /* createTripVC.m */; };
 		F1128EF11F00DA0100F020FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1128EEF1F00DA0100F020FE /* Main.storyboard */; };
 		F1128EF31F00DA0100F020FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1128EF21F00DA0100F020FE /* Assets.xcassets */; };
 		F1128EF61F00DA0100F020FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1128EF41F00DA0100F020FE /* LaunchScreen.storyboard */; };
+		F1128F011F00FAE000F020FE /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F1128F001F00FAE000F020FE /* libsqlite3.0.tbd */; };
+		F1128F031F010FB600F020FE /* pathDb.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F1128F021F010FB600F020FE /* pathDb.sqlite */; };
+		F1128F061F0136E700F020FE /* SKDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F1128F051F0136E700F020FE /* SKDatabase.m */; };
+		F1DE2EA81F021D85002F37EB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DE2EA71F021D85002F37EB /* MapKit.framework */; };
+		F1DE2EAF1F021E5C002F37EB /* MKPolyline+MKPolyline_EncodedString.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DE2EAE1F021E5C002F37EB /* MKPolyline+MKPolyline_EncodedString.m */; };
+		F1DE2EB41F027029002F37EB /* DriverStatusVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1DE2EB31F027029002F37EB /* DriverStatusVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C7E333460D47874007D3950 /* Pods-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-map/Pods-map.release.xcconfig"; sourceTree = "<group>"; };
+		72CA1BEDA8F4F941402FA342 /* libPods-map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B506BECCC758073036D2AE3F /* Pods-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-map/Pods-map.debug.xcconfig"; sourceTree = "<group>"; };
+		F10FB40F1F0372BC0053B846 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		F10FB4101F0372BC0053B846 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
 		F1128EE31F00DA0000F020FE /* map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1128EE71F00DA0000F020FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1128EE91F00DA0000F020FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F1128EEA1F00DA0000F020FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F1128EEC1F00DA0000F020FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F1128EED1F00DA0000F020FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F1128EEC1F00DA0000F020FE /* createTripVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = createTripVC.h; sourceTree = "<group>"; };
+		F1128EED1F00DA0000F020FE /* createTripVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = createTripVC.m; sourceTree = "<group>"; };
 		F1128EF01F00DA0100F020FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1128EF21F00DA0100F020FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1128EF51F00DA0100F020FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1128EF71F00DA0100F020FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1128F001F00FAE000F020FE /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F1128F021F010FB600F020FE /* pathDb.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = pathDb.sqlite; sourceTree = "<group>"; };
+		F1128F041F0136E700F020FE /* SKDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKDatabase.h; sourceTree = "<group>"; };
+		F1128F051F0136E700F020FE /* SKDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKDatabase.m; sourceTree = "<group>"; };
+		F1DE2EA71F021D85002F37EB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F1DE2EAD1F021E5C002F37EB /* MKPolyline+MKPolyline_EncodedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MKPolyline+MKPolyline_EncodedString.h"; path = "../MKPolyline+MKPolyline_EncodedString.h"; sourceTree = "<group>"; };
+		F1DE2EAE1F021E5C002F37EB /* MKPolyline+MKPolyline_EncodedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MKPolyline+MKPolyline_EncodedString.m"; path = "../MKPolyline+MKPolyline_EncodedString.m"; sourceTree = "<group>"; };
+		F1DE2EB21F027029002F37EB /* DriverStatusVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriverStatusVC.h; sourceTree = "<group>"; };
+		F1DE2EB31F027029002F37EB /* DriverStatusVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriverStatusVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +55,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1DE2EA81F021D85002F37EB /* MapKit.framework in Frameworks */,
+				F1128F011F00FAE000F020FE /* libsqlite3.0.tbd in Frameworks */,
+				94AD7EA30E929AB9660A702D /* libPods-map.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BE51DA4998C4F389EC5DDB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1DE2EA71F021D85002F37EB /* MapKit.framework */,
+				F1128F001F00FAE000F020FE /* libsqlite3.0.tbd */,
+				72CA1BEDA8F4F941402FA342 /* libPods-map.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF0589DD153956104325A608 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B506BECCC758073036D2AE3F /* Pods-map.debug.xcconfig */,
+				4C7E333460D47874007D3950 /* Pods-map.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F1128EDA1F00DA0000F020FE = {
 			isa = PBXGroup;
 			children = (
+				F1128F021F010FB600F020FE /* pathDb.sqlite */,
 				F1128EE51F00DA0000F020FE /* map */,
 				F1128EE41F00DA0000F020FE /* Products */,
+				AF0589DD153956104325A608 /* Pods */,
+				3BE51DA4998C4F389EC5DDB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,11 +105,17 @@
 		F1128EE51F00DA0000F020FE /* map */ = {
 			isa = PBXGroup;
 			children = (
+				F1DE2EB11F026EBA002F37EB /* Algoritham */,
+				F1DE2EB01F026EA8002F37EB /* database */,
 				F1128EE91F00DA0000F020FE /* AppDelegate.h */,
 				F1128EEA1F00DA0000F020FE /* AppDelegate.m */,
-				F1128EEC1F00DA0000F020FE /* ViewController.h */,
-				F1128EED1F00DA0000F020FE /* ViewController.m */,
+				F1128EEC1F00DA0000F020FE /* createTripVC.h */,
+				F1128EED1F00DA0000F020FE /* createTripVC.m */,
+				F1DE2EB21F027029002F37EB /* DriverStatusVC.h */,
+				F1DE2EB31F027029002F37EB /* DriverStatusVC.m */,
 				F1128EEF1F00DA0100F020FE /* Main.storyboard */,
+				F10FB40F1F0372BC0053B846 /* MapVC.h */,
+				F10FB4101F0372BC0053B846 /* MapVC.m */,
 				F1128EF21F00DA0100F020FE /* Assets.xcassets */,
 				F1128EF41F00DA0100F020FE /* LaunchScreen.storyboard */,
 				F1128EF71F00DA0100F020FE /* Info.plist */,
@@ -79,6 +132,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F1DE2EB01F026EA8002F37EB /* database */ = {
+			isa = PBXGroup;
+			children = (
+				F1128F041F0136E700F020FE /* SKDatabase.h */,
+				F1128F051F0136E700F020FE /* SKDatabase.m */,
+			);
+			name = database;
+			sourceTree = "<group>";
+		};
+		F1DE2EB11F026EBA002F37EB /* Algoritham */ = {
+			isa = PBXGroup;
+			children = (
+				F1DE2EAD1F021E5C002F37EB /* MKPolyline+MKPolyline_EncodedString.h */,
+				F1DE2EAE1F021E5C002F37EB /* MKPolyline+MKPolyline_EncodedString.m */,
+			);
+			name = Algoritham;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1128EFA1F00DA0100F020FE /* Build configuration list for PBXNativeTarget "map" */;
 			buildPhases = (
+				4EB847C178E19A221EE34FF3 /* [CP] Check Pods Manifest.lock */,
 				F1128EDF1F00DA0000F020FE /* Sources */,
 				F1128EE01F00DA0000F020FE /* Frameworks */,
 				F1128EE11F00DA0000F020FE /* Resources */,
+				124C22D1365F8A7C8CE6BD89 /* [CP] Embed Pods Frameworks */,
+				052A6FCA6E069F5A7985A489 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,7 +184,7 @@
 				TargetAttributes = {
 					F1128EE21F00DA0000F020FE = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9C44HYA8X6;
+						DevelopmentTeam = 685EJS55D9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1128F031F010FB600F020FE /* pathDb.sqlite in Resources */,
 				F1128EF61F00DA0100F020FE /* LaunchScreen.storyboard in Resources */,
 				F1128EF31F00DA0100F020FE /* Assets.xcassets in Resources */,
 				F1128EF11F00DA0100F020FE /* Main.storyboard in Resources */,
@@ -146,14 +221,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		052A6FCA6E069F5A7985A489 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-map/Pods-map-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		124C22D1365F8A7C8CE6BD89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-map/Pods-map-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EB847C178E19A221EE34FF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1128EDF1F00DA0000F020FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1128EEE1F00DA0000F020FE /* ViewController.m in Sources */,
+				F10FB4111F0372BC0053B846 /* MapVC.m in Sources */,
+				F1128EEE1F00DA0000F020FE /* createTripVC.m in Sources */,
 				F1128EEB1F00DA0000F020FE /* AppDelegate.m in Sources */,
+				F1128F061F0136E700F020FE /* SKDatabase.m in Sources */,
 				F1128EE81F00DA0000F020FE /* main.m in Sources */,
+				F1DE2EB41F027029002F37EB /* DriverStatusVC.m in Sources */,
+				F1DE2EAF1F021E5C002F37EB /* MKPolyline+MKPolyline_EncodedString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -263,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -273,24 +400,26 @@
 		};
 		F1128EFB1F00DA0100F020FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B506BECCC758073036D2AE3F /* Pods-map.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9C44HYA8X6;
+				DEVELOPMENT_TEAM = 685EJS55D9;
 				INFOPLIST_FILE = map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cm.cns.firepush.map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cnsoftnet.googlemap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		F1128EFC1F00DA0100F020FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C7E333460D47874007D3950 /* Pods-map.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9C44HYA8X6;
+				DEVELOPMENT_TEAM = 685EJS55D9;
 				INFOPLIST_FILE = map/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cm.cns.firepush.map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cnsoftnet.googlemap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -314,6 +443,7 @@
 				F1128EFC1F00DA0100F020FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

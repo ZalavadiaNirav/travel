@@ -35,10 +35,11 @@
 			
 			NSString *origPaths = [[NSBundle mainBundle] resourcePath];
 			NSString *origPath = [origPaths stringByAppendingPathComponent:dbFile];
-			
+            NSLog(@"db path %@",origPath);
+
 			NSError *error;
 			int success = [fileManager copyItemAtPath:origPath toPath:docPath error:&error];			
-			NSAssert1(success,[NSString stringWithString:@"Failed to copy database into dynamic location"],error);
+			NSAssert1(success,@"Failed to copy database into dynamic location",error);
 		}
 		int result = sqlite3_open([docPath UTF8String], &dbh);
 		NSAssert1(SQLITE_OK == result, NSLocalizedStringFromTable(@"Unable to open the sqlite database (%@).", @"Database", @""), [NSString stringWithUTF8String:sqlite3_errmsg(dbh)]);	
@@ -53,10 +54,11 @@
 		
 		NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 		NSString *docDir = [docPaths objectAtIndex:0];
-		NSString *docPath = [docDir stringByAppendingPathComponent:dbFile]; 
+		NSString *docPath = [docDir stringByAppendingPathComponent:dbFile];
+//        NSLog(@"db path %@",docPath);
 		bool success = [data writeToFile:docPath atomically:YES];
 		
-		NSAssert1(success,[NSString stringWithString:@"Failed to save database into documents path"], nil);
+		NSAssert1(success,@"Failed to save database into documents path", nil);
 		
 		int result = sqlite3_open([docPath UTF8String], &dbh);
 		NSAssert1(SQLITE_OK == result, NSLocalizedStringFromTable(@"Unable to open the sqlite database (%@).", @"Database", @""), [NSString stringWithUTF8String:sqlite3_errmsg(dbh)]);	
@@ -149,7 +151,7 @@
 	
 	sqlite3_stmt *statement;
 	id result;
-	if (statement = [self prepare:sql]) {
+	if ((statement = [self prepare:sql])) {
 		if (sqlite3_step(statement) == SQLITE_ROW) {		
 			if (strcasecmp(sqlite3_column_decltype(statement,0),"Boolean") == 0) {
 				result = [NSNumber numberWithBool:(BOOL)sqlite3_column_int(statement,0)];

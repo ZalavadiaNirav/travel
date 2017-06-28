@@ -6,8 +6,12 @@
 //  Copyright © 2017 CNSoftNet. All rights reserved.
 //
 
-
+#import <MapKit/MapKit.h>
+#import "AppDelegate.h"
 
 @interface MKPolyline (MKPolyline_EncodedString)
+
++ (MKPolyline *)polylineWithEncodedString:(NSString *)encodedString;
+
 
 @end
