@@ -34,13 +34,14 @@
     map=[GMSMapView mapWithFrame:CGRectMake(0, 64.0, self.view.frame.size.width,self.view.frame.size.height-64.0) camera:camera];
     map.mapType=kGMSTypeHybrid;
     map.delegate=self;
+    map.myLocationEnabled=TRUE;
     
     for(int i=0;i<[objapp.polyline count];i++)
     {
         NSString *encodedStr=[NSString stringWithFormat:@"%@",[objapp.polyline objectAtIndex:i]];
         Orignalpath = [GMSMutablePath pathFromEncodedPath:encodedStr];
         GMSPolyline *rectangle = [GMSPolyline polylineWithPath:Orignalpath];
-        
+        [rectangle setTappable:TRUE];
         UIColor *col=[UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:1.0];
         
         rectangle.strokeColor=col;
@@ -61,47 +62,64 @@
    
 }
 
-//-(void)animate:(GMSPath *)path {
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        if (ind < path.count) {
-//            [_path2 addCoordinate:[path coordinateAtIndex:ind]];
-//            _polylineGreen = [GMSPolyline polylineWithPath:_path2];
-//            _polylineGreen.strokeColor = [UIColor greenColor];
-//            _polylineGreen.strokeWidth = 3;
-//            _polylineGreen.map = map;
-//            [arrayPolylineGreen addObject:_polylineGreen];
-//            ind++;
-//        }
-//        else {
-//            ind = 0;
-//            _path2 = [[GMSMutablePath alloc] init];
-//            
-//            for (GMSPolyline *line in arrayPolylineGreen) {
-//                line.map = nil;
-//            }
-//            
-//        }
-//    });
-//}
 
+
+-(void)mapView:(GMSMapView *)mapView didTapOverlay:(GMSOverlay *)overlay
+{
+    //save tapped overlay
+    GMSOverlay *selectedOverlay=overlay;
+    
+    // clear other paths
+    [map clear];
+    selectedOverlay.map=map;
+    
+}
+
+
+
+
+- (BOOL) didTapMyLocationButtonForMapView:(GMSMapView *)mapView
+{
+    return true;
+}
 
 -(void)addPin
 {
-    GMSMarker *sourcePin=[GMSMarker markerWithPosition:location];
-    sourcePin.title=@"Source";
-    sourcePin.snippet=@"T1";
-    sourcePin.groundAnchor=CGPointMake(1.0, 1.0);
+//     GMSProjection *projection=[[GMSProjection alloc] ini]
+    for (int lat=0; lat<1000; lat++)
+    {
+        CGFloat lt=location.latitude+(1.0*lat);
+//        CGFloat lg=location.longitude+(0.20);
+        GMSMarker *sourcePin=[GMSMarker markerWithPosition:CLLocationCoordinate2DMake(lt,location.longitude)];
+        sourcePin.title=@"Source";
+        sourcePin.snippet=@"T1";
+        sourcePin.groundAnchor=CGPointMake(1.0, 1.0);
+        
+        if([map.projection containsCoordinate:sourcePin.position]==TRUE)
+            sourcePin.map=map;
+        else
+            NSLog(@"remove");
+    }
     
+    
+    NSLog(@"far left lat=%f long=%f",map.projection.visibleRegion.farLeft.latitude,map.projection.visibleRegion.farLeft.longitude);
+    NSLog(@"far right lat=%f long=%f",map.projection.visibleRegion.farRight.latitude,map.projection.visibleRegion.farRight.longitude);
+    NSLog(@"near left lat=%f long=%f",map.projection.visibleRegion.nearLeft.latitude,map.projection.visibleRegion.nearLeft.longitude);
+    NSLog(@"near right lat=%f long=%f",map.projection.visibleRegion.nearRight.latitude,map.projection.visibleRegion.nearRight.longitude);
+    
+
     GMSMarker *destinationPin=[GMSMarker markerWithPosition:CLLocationCoordinate2DMake(23.0191,72.5517)];
     destinationPin.title=@"Destination";
     destinationPin.snippet=@"T1";
     destinationPin.groundAnchor=CGPointMake(1.0, 1.0);
     
-    sourcePin.map=map;
     destinationPin.map=map;
     
-    
+//    map
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
